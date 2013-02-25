@@ -19,6 +19,8 @@ describe 'GetFilename'
   it 'gets name of current helpfile'
     help
     Expect GetFilename() ==# 'help'
+    help j
+    Expect GetFilename() ==# 'motion'
   end
 
 end
