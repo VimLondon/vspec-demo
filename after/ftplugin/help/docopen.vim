@@ -19,3 +19,7 @@ function! GetHelptag()
     return ''
   endif
 endfunction
+
+function! OpenDocumentation()
+  execute '!open' RawUrl(GetFilename(), GetHelptag())
+endfunction
