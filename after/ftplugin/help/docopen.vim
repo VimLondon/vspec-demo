@@ -5,3 +5,7 @@ function! RawUrl(filename, helptag)
     return 'http://vimdoc.sourceforge.net/htmldoc/' . a:filename . '.html#' . a:helptag
   endif
 endfunction
+
+function! GetFilename()
+  return expand('%:t:r')
+endfunction

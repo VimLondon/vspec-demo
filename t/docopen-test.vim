@@ -13,3 +13,12 @@ describe 'RawUrl'
   end
 
 end
+
+describe 'GetFilename'
+
+  it 'gets name of current helpfile'
+    help
+    Expect GetFilename() ==# 'help'
+  end
+
+end
