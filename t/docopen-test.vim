@@ -47,3 +47,17 @@ describe 'GetHelptag'
   end
 
 end
+
+describe ':DocOpen'
+
+  it 'command is defined for help files'
+    setlocal filetype=help
+    Expect exists(':DocOpen')  ==# 2
+  end
+
+  it 'command is not defined for non-help files'
+    setlocal filetype=
+    Expect exists(':DocOpen')  ==# 0
+  end
+
+end
