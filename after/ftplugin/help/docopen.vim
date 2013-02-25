@@ -23,3 +23,5 @@ endfunction
 function! OpenDocumentation()
   execute '!open' shellescape(RawUrl(GetFilename(), GetHelptag()), 1)
 endfunction
+
+command! -buffer DocOpen call OpenDocumentation()
