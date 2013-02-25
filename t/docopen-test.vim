@@ -24,3 +24,12 @@ describe 'GetFilename'
   end
 
 end
+
+describe 'GetHelptag'
+
+  it 'gets the helptag under the cursor'
+    help {offset}
+    Expect GetHelptag() ==# '{offset}'
+  end
+
+end

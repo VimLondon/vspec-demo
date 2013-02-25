@@ -9,3 +9,7 @@ endfunction
 function! GetFilename()
   return expand('%:t:r')
 endfunction
+
+function! GetHelptag()
+  return expand('<cword>')
+endfunction
