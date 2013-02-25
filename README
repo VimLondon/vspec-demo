@@ -1,0 +1,5 @@
+Setup:
+
+* clone this repo
+* run `bundle install`
+* to run tests, run `rake test`
