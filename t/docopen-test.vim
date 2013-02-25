@@ -36,4 +36,14 @@ describe 'GetHelptag'
     Expect GetHelptag() ==# 'quote'
   end
 
+  it 'returns blank string when cursor is not on a helptag'
+    help
+    normal W
+    Expect GetHelptag() ==# ''
+    normal }
+    Expect GetHelptag() ==# ''
+    normal G
+    Expect GetHelptag() ==# ''
+  end
+
 end
