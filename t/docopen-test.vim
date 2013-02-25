@@ -30,6 +30,10 @@ describe 'GetHelptag'
   it 'gets the helptag under the cursor'
     help {offset}
     Expect GetHelptag() ==# '{offset}'
+    help '
+    Expect GetHelptag() ==# "'"
+    help "
+    Expect GetHelptag() ==# 'quote'
   end
 
 end
