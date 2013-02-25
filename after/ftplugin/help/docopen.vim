@@ -25,3 +25,4 @@ function! OpenDocumentation()
 endfunction
 
 command! -buffer DocOpen call OpenDocumentation()
+let b:undo_ftplugin .= '| delcommand DocOpen'
