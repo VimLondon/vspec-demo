@@ -11,5 +11,11 @@ function! GetFilename()
 endfunction
 
 function! GetHelptag()
-  return expand('<cword>')
+  let word = expand('<cWORD>')
+  let unstarred = substitute(word, '\v^\*([^*]*)\*$', '\1', 'g')
+  if word != unstarred
+    return unstarred
+  else
+    return ''
+  endif
 endfunction
