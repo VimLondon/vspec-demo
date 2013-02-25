@@ -21,5 +21,5 @@ function! GetHelptag()
 endfunction
 
 function! OpenDocumentation()
-  execute '!open' RawUrl(GetFilename(), GetHelptag())
+  execute '!open' shellescape(RawUrl(GetFilename(), GetHelptag()), 1)
 endfunction
