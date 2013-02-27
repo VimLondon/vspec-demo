@@ -6,7 +6,7 @@ Setup:
 
 ## [Boilerplate][01]
 
-The starting point for this demonstration was all set to run vspec tests. To replicate this setup, follow [Kana's instructions][vpec-setup].
+The starting point for this demonstration was all set to run vspec tests. To replicate this setup, follow [Kana's instructions][vspec-setup].
 
 ## [`RawUrl()`][02]
 
