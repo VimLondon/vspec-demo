@@ -1,3 +1,7 @@
+This repository contains the code used to demonstrate [vspec][] at the [February 2013 Vim London meetup][meetup]. Look at the [commit history][commits] to see how the code evolved. You can find links to *snapshots* of the project at significant milestones below. The *compare changes* links let you compare each snapshot with the previous one.
+
+Don't install this plugin! The code is provided as a learning resource. If you want to use the `:DocOpen` command, go and get the real version of the [DocOpen][] plugin.
+
 Setup:
 
 * clone this repo
@@ -43,3 +47,7 @@ Specify and implement the `:DocOpen` command. [Compare changes][05-06]
 [05-06]: https://github.com/VimLondon/vspec-demo/compare/05_open_doc_url...06_create_DocOpen_command
 
 [vspec-setup]: http://whileimautomaton.net/2013/02/13211500
+[vspec]: https://github.com/kana/vim-vspec
+[meetup]: http://www.meetup.com/Vim-London/events/102114102/
+[DocOpen]: https://github.com/nelstrom/vim-docopen
+[commits]: https://github.com/VimLondon/vspec-demo/commits/master
